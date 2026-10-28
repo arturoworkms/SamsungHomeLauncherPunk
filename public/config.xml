@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="https://arturo.local/samsung-home"
+        version="0.7.25"
+        viewmodes="maximized">
+  <tizen:application id="ArtHome002.Launcher" package="ArtHome002" required_version="6.0" />
+  <tizen:app-control><tizen:src name="index.html" reload="disable"/><tizen:operation name="http://tizen.org/appcontrol/operation/main"/></tizen:app-control>
+  <content src="index.html" />
+  <feature name="http://tizen.org/feature/screen.size.all" />
+  <feature name="http://tizen.org/feature/tv.pip" />
+  <icon src="icon.png" />
+  <name>HomePunk</name>
+  <access origin="https://api.open-meteo.com" subdomains="true" />
+
+  <access origin="http://127.0.0.1:47998" />
+  <access origin="http://localhost:47998" />
+  <tizen:profile name="tv-samsung" />
+  <tizen:setting screen-orientation="landscape"
+                 context-menu="disable"
+                 background-support="enable"
+                 encryption="disable"
+                 install-location="auto"
+                 hwkey-event="enable" />
+  <tizen:privilege name="http://tizen.org/privilege/application.info" />
+  <tizen:privilege name="http://tizen.org/privilege/application.launch" />
+  <tizen:privilege name="http://tizen.org/privilege/tv.window" />
+  <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice" />
+  <tizen:privilege name="http://tizen.org/privilege/internet" />
+</widget>

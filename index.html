@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#04050a" />
+    <title>HomePunk</title>
+    <!-- Critical inline: evita el flash blanco y pinta fondo+wordmark en el
+         primer frame (arranque en frÃ­o), antes de que React monte en #root.
+         Sin fuentes externas ni animaciones: nada compite con el primer pintado. -->
+    <style>
+      html,body{margin:0;height:100%;background:#04050a;overflow:hidden}
+      #boot{position:fixed;inset:0;background:#04050a;display:flex;align-items:center;justify-content:center;z-index:1}
+      #boot b{font:600 30px "SamsungOne","Segoe UI",Arial,sans-serif;color:#fff;opacity:.92;letter-spacing:.28em;text-transform:uppercase}
+      #root:not(:empty)+#boot{display:none}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot"><b>HomePunk</b></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

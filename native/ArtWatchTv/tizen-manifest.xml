@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="10.0" package="ArtWatch1" version="1.6.3">
+  <profile name="tv-samsung"/>
+  <service-application appid="ArtWatch1.WatchService" exec="ArtWatchTv.dll" type="dotnet" multiple="false" taskmanage="false" nodisplay="true" on-boot="true" auto-restart="true">
+    <label>ArturoPro Home Watch</label>
+    <icon>ArtWatchTv.png</icon>
+  </service-application>
+  <privileges>
+    <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+    <privilege>http://tizen.org/privilege/appmanager.info</privilege>
+    <privilege>http://tizen.org/privilege/application.info</privilege>
+    <privilege>http://tizen.org/privilege/internet</privilege>
+    <privilege>http://tizen.org/privilege/filesystem.read</privilege>
+  </privileges>
+</manifest>

@@ -1,0 +1,15 @@
+﻿node_modules/
+dist/
+build/
+*.tsbuildinfo
+*.tpk
+*.wgt
+*.p12
+*.pfx
+*.pwd
+*.pem
+*.key
+*.cer
+*.crt
+.env
+*.sdbkey
